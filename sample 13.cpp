@@ -3,61 +3,40 @@ using namespace std;
 
 int main() {
 	
-	char choice;
-	int num1, num2;
 	
-	cout<<"\n***************************************************";
-	cout<<"\n*                                                 *";
-	cout<<"\n*                                                 *";
-	cout<<"\n*                 CALCULATOR                      *";
-	cout<<"\n***************************************************";
-	cout<<"\n***************************************************";
-	cout<<"\n*           ENTER + FOR ADDITION                  *";
-	cout<<"\n*           ENTER - FOR ADDITION                  *";
-	cout<<"\n*           ENTER / FOR ADDITION                  *";
-	cout<<"\n*           ENTER * FOR ADDITION                  *";
-	cout<<"\n***************************************************";
+	int grade;
 	
-	cout<<"\n SELECT AN OPERATOR: ";
-	cin>>choice;
+	cout<<"Enter Your Grade: ";
+	cin>>grade;
 	
-	cout<<"\nEnter a Number: ";
-	cin>>num1;
-	
-	cout<<"\n Enter a Number: ";
-	cin>>num2;
-	
-		if (choice == '1'){
-			
-			cout<<"\n \n RESULT IS: "<<num1 + num2;
-		}
-		else if (choice == '2' ) {
-	
-			cout<<"\n \n RESULT IS: "<<num1 - num2;
-		}
-		else if (choice == '3') {
-			
-			cout<<"\n \n RESULT IS: "<<num1 / num2;
-		}
-	
+	if (grade == 100){
 		
-			else if (choice == '4' ) {
-	
-		cout<<"\n \n RESULT IS: "<<num1 * num2;
-			
-		}
+		cout<<"Class S\n";
+	}
+	else if (grade > 90){
 		
-	
+		cout<<"Class A\n";
+	}
+	else if (grade > 80){
 		
+		cout<<"Class B\n";
+	}
+	else if (grade > 70){
+		
+		cout<<"Class C\n";
+	}
+	else if (grade > 60){
+		
+		cout<<"Class D\n ";
+		
+	}else{
+		
+		cout<<"Class E\n ";
+	}
 	
 	
-	
-	
-	
-	
-	return 0;
+	return 0;	
 }
-	
 
 	
 		
